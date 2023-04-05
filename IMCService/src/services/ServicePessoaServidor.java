@@ -40,7 +40,7 @@ public class ServicePessoaServidor extends UnicastRemoteObject implements IServi
         Iterator<Pessoa> it = pessoas.iterator();
         while (it.hasNext()) {
             Pessoa pessoa = it.next();
-            if (pessoa.getNomePessoa().equals(nomePessoa)) {
+            if (pessoa.getNomePessoa().equals(nomePessoa) && pessoa.getNomePessoa().equals("Adm") {
                 it.remove();
                 return pessoa;
             }
