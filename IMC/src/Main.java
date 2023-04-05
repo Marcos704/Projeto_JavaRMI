@@ -131,11 +131,26 @@ public class Main {
             System.out.println(" -------------------------------- ");
             System.out.print("*Nome.: ");
             auxNome = auxProcInputScanner.nextLine();
-            server.deletarPessoa(auxNome);
+            
+            If(server.deletarPessoa(auxNome) != null){
             System.out.println("Pressione qualquer tecla para voltar ao MENU...");
             System.in.read();
             CLS();
             MENU();
+}eles{
+CLS();
+
+System.out.println(" ================================ ");
+            System.out.println("|       EXCLUIR  PESSOA           |");
+            System.out.println(" -------------------------------- ");
+System.out.println("Usuário não Localizado");
+
+System.out.println("Pressione qualquer tecla para voltar ao MENU...");
+            System.in.read();
+            CLS();
+            MENU();
+
+}
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
